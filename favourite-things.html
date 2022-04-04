@@ -1,0 +1,168 @@
+<!DOCTYPE html> 
+
+<html> 
+	 <head>
+		<meta charset="utf-8">
+		<title>Favourites Page</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="css/screen.css">
+		<script type="text/javascript" src="js/jquery.js"></script>
+		<script type="text/javascript" src="js/declarativeToggle.js"></script>
+	</head>
+
+	<body>
+		<div class="container">
+			<header>
+				<h1>Favourites Page</h1>
+				<nav class="site-nav">
+					<ul class="group">
+						<li class="nav-home"><a href="index.html">Home</a></li>
+						<li class="nav-fav"><a href="favourite-things.html">Favourite Colours</a></li>
+					</ul>
+				</nav>
+			</header>
+
+			<div class="content-area">
+				<span data-toggle-target=".fav" data-toggle-text="Hide My Favourite Things" class="toggle-btn read-more">
+					Read My Favourite Things</span>
+
+				<div class="row fav">
+					<div class="col col-xs-6 col-md-4">
+						<p>I prefer <em>cool colours</em>. This includes: </p>
+						<ul>
+							<li>Blue</li>
+							<li>Green</li>
+							<li>Purple</li>
+						</ul>
+					</div>
+					<div class="col col-xs-6 col-md-4">
+						<p>My <strong>Top Fav Shades</strong> of <em>Blue</em> is: </p>
+						<ol>
+							<li>Tiffany Blue</li>
+							<li>Baby Blue</li>
+							<li>Midnight Blue</li>
+						</ol>
+					</div>
+					<div class="col col-xs-6 col-md-4">		
+						<p>My <strong>GO TO Book</strong> on Colours is: </p>
+						<dl>
+							<dt>&nbsp;&nbsp;&nbsp;<em>Title:</em></dt>
+							<dd>Artist's Color Manual</dd>
+							<dd>The Complete Guide to Working with Color</dd>
+							<dt>&nbsp;&nbsp;&nbsp;<em>Author:</em></dt>
+							<dd>Simon Jennings</dd>
+						</dl>
+					</div>
+				</div>
+
+				<section>
+					<form>
+						<h1>What About You?</h1>
+						<div class="form-row">
+							<label for="name" class="hidden-label">Name:</label>
+							<input id="name" type="text" placeholder="Name"> 
+						</div>
+
+						<label for="favouriteColour"class="hidden-label">What's Your favourite Colour?</label>
+						<select id="favouriteColour" name="favouriteColour">
+							<option >Favourite Colour....</option>
+							<option value="colourRed">Red</option>
+							<option value="colourOrange">Orange</option>
+							<option value="colourYellow">Yellow</option>
+							<option value="colourGreen">Green</option>
+							<option value="colourBlue">Blue</option>
+							<option value="colourPurple">Purple</option>
+						</select>
+
+						<fieldset>
+							<legend>What's Your Preferred Colour Temperature?</legend>
+							<div class="opt">
+								<input type="radio" id="cool" name="favouriteTemp" value="temp1">
+								<label for="cool">Cool</label>
+							</div>
+							<div class="opt">
+								<input type="radio" id="warm" name="favouriteTemp" value="temp2">
+								<label for="warm">Warm</label>
+							</div>
+						</fieldset>
+
+						<fieldset>
+							<legend>Select all the Color Schemes You Prefer:</legend>
+							<div class="opt">
+								<input type="checkbox" id="comp" name="favouriteScheme" value="scheme1">
+								<label for="comp">Complementary Colour Schemes</label>
+							</div>
+							<div class="opt">
+								<input type="checkbox" id="rect" name="favouriteScheme" value="scheme2">
+								<label for="rect">Rectangle (Tetratic) Colour Scheme</label>
+							</div>
+							<div class="opt">
+								<input type="checkbox" id="anal" name="favouriteScheme" value="scheme3">
+								<label for="anal">Analogous Colour Scheme</label>
+							</div>
+							<div class="opt">
+								<input type="checkbox" id="tria" name="favouriteScheme" value="scheme4">
+								<label for="tria">Triadic Colour Scheme</label>
+							</div>
+							<div class="opt">
+								<input type="checkbox" id="squa" name="favouriteScheme" value="scheme5">
+								<label for="squa">Square Colour Scheme</label>
+							</div>
+							<div class="opt">
+								<input type="checkbox" id="split" name="favouriteScheme" value="scheme6">
+								<label for="split">Split Complementary Colour Scheme</label>
+							</div>
+						</fieldset>
+
+						<input type="submit" value="Save">
+					</form>
+				</section>
+
+				<section>
+					<h1>Mixing Colours:</h1>
+					<table class="mixing">
+						<thead>
+							<tr>
+								<th class="cols one"></th>
+								<th class="cols">Red</th>
+								<th class="cols">Yellow</th>
+								<th class="cols">Blue</th>
+								<th class="cols">White</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td class="one">Orange</td>
+								<td>XXXXX</td><td>XXXXX</td><td></td><td></td>
+							</tr>
+							<tr>
+								<td class="one">Peach</td>
+								<td>XXXXX</td><td>XXXXX</td><td></td><td>XXXXX</td>
+							</tr>
+							<tr>
+								<td class="one">Green</td>
+								<td></td><td>XXXXX</td><td>XXXXX</td><td></td>
+							</tr>
+							<tr>
+								<td class="one">Teal</td>
+								<td></td><td>XXXXX</td><td>XXXXX</td><td>XXXXX</td>
+							</tr>
+							<tr>
+								<td class="one">Purple</td>
+								<td>XXXXX</td><td></td><td>XXXXX</td><td></td>
+							</tr>
+							<tr>
+								<td class="one">Perriwinkle</td>
+								<td>XXXXX</td><td></td><td>XXXXX</td><td>XXXXX</td>
+							</tr>
+						</tbody>
+					</table>
+				</section>
+			</div>
+
+			<footer>
+				<p>&copy; 2022 - This is the footer of the websites</p>
+			</footer>
+		</div>
+	</body>
+</html> 

@@ -1,0 +1,132 @@
+<!DOCTYPE html> 
+
+<html> 
+	<head>
+		<meta charset="utf-8">
+		<title>Homepage</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="css/screen.css">
+		<link rel="stylesheet" href="css/lightbox.css">
+		<script type="text/javascript" src="js/jquery.js"></script>
+		<script type="text/javascript" src="js/cycle2.js"></script>
+		<script type="text/javascript" src="js/lightbox.min.js"></script>
+	</head>
+
+	<body>
+		<div class="container">
+			<header>
+				<h1>Homepage</h1>
+				<nav class="site-nav">
+					<ul class="group">
+						<li class="nav-home"><a href="index.html">Home</a></li>
+						<li class="nav-fav"><a href="favourite-things.html">Favourite Colours</a></li>
+					</ul>
+				</nav>
+			</header>
+
+			<div class="content-area group">
+				<div class="main-area">
+					<h2>Image</h2>
+					<p>I have included an image on this page:</p>
+					<div class="image-banner">
+						<img src="images/animals/dog.jpg" alt="Dog on Couch">
+						<div class="banner-desc">
+							<p>This is a  brief description of the image....... </p>
+						</div>
+					</div>
+					
+					<h2>SVG Image</h2>
+					<p>I have included an SVG on this page:</p>
+					<div class="form-row boxes-r1">
+						<svg><rect class="box-a" x="20" y="10" width="70" height="70" stroke="darkblue" fill="transparent" stroke-width="5"/></svg>
+						<svg><rect class="box-a" x="20" y="10" rx="10" ry="10" width="75" height="75" stroke="orange" fill="transparent" stroke-width="5"/></svg>
+					</div>
+					<div class="form-row boxes-r2">
+						<svg><circle class="box-a" cx="55" cy="55" r="40" stroke="red" fill="transparent" stroke-width="5"/></svg>
+						<svg><ellipse class="box-a" cx="55" cy="55" rx="40" ry="25" stroke="green" fill="transparent" stroke-width="5"/></svg>
+					</div>
+
+					<h2>Slideshow</h2>
+					<p>I have included a slideshow on this page:</p>
+					<div class="cycle-slideshow" data-cycle-slides=".slide" data-cycle-pause-on-hover="true">
+
+						<span class="cycle-prev">&laquo;</span>
+						<span class="cycle-next">&raquo;</span>
+
+						<span class="cycle-pager"></span>
+
+						<div class="slide">
+							<img src="images/animals/cat.jpg" alt="Cat on Rug">
+							<div class="slide-text">
+								<h2>Cat Title</h2>
+								<a href="#" class="btn-a">Call to Action!</a>
+							</div>
+						</div>
+						<div class="slide">
+							<img src="images/animals/dog.jpg" alt="Dog on Couch">
+							<div class="slide-text">
+								<h2>Dog Title</h2>
+							</div>
+						</div>
+						<div class="slide">
+							<img src="images/animals/squirrel.jpg" alt="Squirrel on a Fence">
+							<div class="slide-text">
+								<h2>Squirrel Title</h2>
+							</div>
+						</div>
+						<div class="slide">
+							<img src="images/animals/duck.jpg" alt="Duck in a Pond">
+							<div class="slide-text">
+								<h2>Duck Title</h2>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<aside class="sidebar">
+					<div class="group">
+						<h2>Music</h2>
+						<p>I have included a sample recording on this page:</p>
+						<audio controls>
+							<source src="audio/ukulele.mp3" type="audio/mpeg">
+							<source src="audio/ukulele.ogg" type="audio/ogg">
+							<a href="audio/ukulele.mp3">Ukulele audio recording</a>
+						</audio>
+					</div>
+					<subtitle>Give Me A Smile by Free Music | https://soundcloud.com/fm_freemusic<br>
+						Music promoted by https://www.chosic.com/free-music/all/<br>
+						Creative Commons Attribution 3.0 Unported License<br>
+						https://creativecommons.org/licenses/by/3.0/deed.en_US</subtitle>
+
+					<h2>Video</h2>
+					<p>I have included an example video file on this page:</p>
+					<video controls>
+						<source src="video/bear.mp4" type="video/mp4" >
+						<source src="video/bear.webm" type="video/webm" >
+						Outdated Web Browser. Consider: <a href="http://browsehappy.com/">updating</a>
+					</video>
+
+					<h2>Modal Window Gallery</h2>
+					<p>I have included a gallery on this page:</p>
+					<div class="thumbnails">
+						<a href="images/modal/bear.jpg" data-lightbox="gallery" data-title="This is a BEAR"><img src="images/modal/bear-thumb.jpg" alt="Bear"></a>
+						<a href="images/modal/bee.jpg" data-lightbox="gallery" data-title="This is a BEE"><img src="images/modal/bee-thumb.jpg" alt="Bee"></a>
+						<a href="images/modal/dock.jpg" data-lightbox="gallery" data-title="This is a DOCK"><img src="images/modal/dock-thumb.jpg" alt="Dock"></a>
+						<a href="images/modal/duck.jpg" data-lightbox="gallery" data-title="This is a DUCK"><img src="images/modal/duck-thumb.jpg" alt="Duck"></a>
+						<a href="images/modal/squirrel.jpg" data-lightbox="gallery" data-title="This is a SQUIRREL"><img src="images/modal/squirrel-thumb.jpg" alt="Squirrel"></a>
+						<a href="images/modal/strawberry.jpg" data-lightbox="gallery" data-title="This is a STRAWBERRY"><img src="images/modal/strawberry-thumb.jpg" alt="Strawberry"></a>
+						<a href="images/modal/trees.jpg" data-lightbox="gallery" data-title="This is TREES"><img src="images/modal/trees-thumb.jpg" alt="Trees"></a>
+						<a href="images/modal/water.jpg" data-lightbox="gallery" data-title="This is WATER"><img src="images/modal/water-thumb.jpg" alt="Water"></a>
+					</div>
+				</aside>
+			</div>
+
+			<footer>
+				<p>&copy; 2022 - This is the footer of the websites</p>
+			</footer>
+		</div>
+	</body>
+</html> 
+
+
+
